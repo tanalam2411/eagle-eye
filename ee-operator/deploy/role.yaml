@@ -42,6 +42,18 @@ rules:
   resources:
   - servicemonitors
   verbs:
+<<<<<<< HEAD
+  - get
+  - create
+- apiGroups:
+  - apps
+  resourceNames:
+  - ee-operator
+  resources:
+  - deployments/finalizers
+  verbs:
+  - update
+=======
   - "get"
   - "create"
 - apiGroups:
@@ -52,6 +64,7 @@ rules:
   - ee-operator
   verbs:
   - "update"
+>>>>>>> 62059099ecda599c098cf78c0ae417c8ce75d3cf
 - apiGroups:
   - ""
   resources:
@@ -65,3 +78,18 @@ rules:
   - deployments
   verbs:
   - get
+<<<<<<< HEAD
+- apiGroups:
+  - eagle.eye.io
+  resources:
+  - '*'
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+=======
+>>>>>>> 62059099ecda599c098cf78c0ae417c8ce75d3cf
